@@ -1,0 +1,55 @@
+/* Estilizando o corpo e os elementos da página */
+body {
+    background-color: #0c0c0c;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Ocultando o vídeo */
+#background-audio {
+    display: none; /* Oculta o elemento de vídeo */
+}
+
+.carrossel {
+    max-width: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+}
+
+.carrossel img {
+    width: 100%;
+    height: auto;
+    display: none;
+    border-radius: 10px;
+}
+
+.cronometro {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#contagem {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .carrossel {
+        max-width: 90%;
+    }
+    
+    #contagem {
+        font-size: 16px;
+    }
+}
